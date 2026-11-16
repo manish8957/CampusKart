@@ -1,0 +1,100 @@
+# ==============================================================================
+# CampusKart - .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Environment & Sensitive Configuration
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+config/config.local.php
+config/secrets.php
+
+# ------------------------------------------------------------------------------
+# 2. User Uploads & Media (Preserve directory structure with .gitkeep)
+# ------------------------------------------------------------------------------
+assets/uploads/*
+!assets/uploads/.gitkeep
+!assets/uploads/sneakers/
+assets/uploads/sneakers/*
+!assets/uploads/sneakers/.gitkeep
+
+# ------------------------------------------------------------------------------
+# 3. Log Files & Server Runtimes
+# ------------------------------------------------------------------------------
+*.log
+error_log
+apache_error.log
+mysql_error.log
+logs/
+
+# ------------------------------------------------------------------------------
+# 4. Dependency Directories (Composer / Node if ever used)
+# ------------------------------------------------------------------------------
+/vendor/
+/node_modules/
+composer.phar
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ------------------------------------------------------------------------------
+# 5. IDE & Code Editor Configurations
+# ------------------------------------------------------------------------------
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+*~
+*.bak
+
+# ------------------------------------------------------------------------------
+# 6. Operating System Files
+# ------------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+.directory
+
+# ------------------------------------------------------------------------------
+# 7. Temporary Files & Caches
+# ------------------------------------------------------------------------------
+tmp/
+temp/
+*.tmp
+.cache/
+*.pid
+*.seed
+
+# ------------------------------------------------------------------------------
+# 8. Development & Verification Screenshots
+# ------------------------------------------------------------------------------
+*_snap.png
+verified_*.png
+current_*.png
+home_no_wishlist_nav.png
